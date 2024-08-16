@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Mini Message Board</title>
+  </head>
+  <body>
+    <ul>
+      <% for (let i = 0; i < message.length; i++) { %>
+      <li>
+        <span> <%= message[i].text %> </span>
+          <span> <%= message[i].user %> </span>
+          <span> <%= message[i].added %> </span>
+        </a>
+      </li>
+      <button>Open</button>
+      <% } %>
+    </ul>
+    <a href="./new">New Message</a>
+  </body>
+</html>
