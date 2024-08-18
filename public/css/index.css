@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(161, 156, 156);
+}
+
+.allMessagesContainer {
+  padding-top: 3rem;
+}
+
+.messageContainer {
+  border: 3px solid red;
+  min-height: 7rem;
+}
+
+span {
+  display: block;
+  color: white;
+  font-size: 1.3rem;
+  background-color: black;
+  min-height: 1rem;
+  max-width: 30rem;
+}
