@@ -1,19 +1,22 @@
 <html>
   <head>
     <title>Mini Message Board</title>
+    <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <ul>
+    <%- include('navbar'); -%>
+    <div class="newMessageContainer">
+      <a href="./new" class="newMessageLink">New Message</a>
+    </div>
+    <div class="allMessagesContainer">
       <% for (let i = 0; i < message.length; i++) { %>
-      <li>
+      <div class="messageContainer">
         <span> <%= message[i].text %> </span>
-          <span> <%= message[i].user %> </span>
-          <span> <%= message[i].added %> </span>
-        </a>
-      </li>
-      <button>Open</button>
+        <span> <%= message[i].user %> </span>
+        <span> <%= message[i].added %> </span>
+        <a href="/message/<%= message[i].id %>" class="openMessageLink">Open</a>
+      </div>
       <% } %>
-    </ul>
-    <a href="./new">New Message</a>
+    </div>
   </body>
 </html>
