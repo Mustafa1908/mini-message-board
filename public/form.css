@@ -15,7 +15,7 @@ body {
 
 .messageInput {
   max-height: 7rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   max-width: 20rem;
   background-color: rgb(216, 208, 208);
 }
