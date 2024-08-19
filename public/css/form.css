@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(161, 156, 156);
+}
+
+.header {
+  padding-left: 4rem;
+  padding-top: 1rem;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.messageInput {
+  max-height: 7rem;
+  font-size: 2rem;
+  max-width: 20rem;
+  background-color: rgb(216, 208, 208);
+}
+
+.submitButton {
+  min-height: 3rem;
+  font-size: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  border-radius: 3rem;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.submitButton:hover {
+  cursor: pointer;
+}
