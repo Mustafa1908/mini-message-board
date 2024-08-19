@@ -1,10 +1,12 @@
+<head>
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="stylesheet" href="/message.css" />
+</head>
 <%- include('navbar'); -%>
-<header>
-  <ul>
-    <li>
-      <span> <%= message[messageIndex].text %> </span>
-        <span> <%= message[messageIndex].user %> </span>
-        <span> <%= message[messageIndex].added %> </span>
-      </a>
-    </li>
+<header class="header">
+  <div>
+    <span class="messageContent"> <%= message[messageIndex].text %> </span>
+    <span class="messageContent"> <%= message[messageIndex].user %> </span>
+    <span class="messageContent"> <%= message[messageIndex].added %> </span>
+  </div>
 </header>

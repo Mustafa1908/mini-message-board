@@ -1,7 +1,11 @@
+<head>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/form.css" />
+</head>
 <%- include('navbar'); -%>
-<header>
-    <form method="POST" action="/new">
-        <input type="text" name="messageText" placeholder="Your Text...">
-        <input type="text" name="messageUser" placeholder="Your UserName...">
-        <button>Submit</button>
+<header class="header">
+    <form method="POST" action="/new" class="form">
+        <input type="text" name="messageText" placeholder="Your Text..." class="messageInput">
+        <input type="text" name="messageUser" placeholder="Your UserName..." class="messageInput">
+        <button class="submitButton">Submit</button>
 </header>
