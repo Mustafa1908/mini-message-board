@@ -3,6 +3,11 @@
   padding-top: 1rem;
 }
 
+.messageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .messageContent {
   font-size: 1.3rem;
 }
