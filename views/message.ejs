@@ -6,9 +6,11 @@
 <header class="header">
   <div class="messageContainer">
     <span class="messageContent messageText">
-      <%= message[messageIndex].text %>
+      <%= message[messageIndex - 1].message %>
     </span>
-    <span class="messageContent"> <%= message[messageIndex].user %> </span>
-    <span class="messageContent"> <%= message[messageIndex].added %> </span>
+    <span class="messageContent">
+      <%= message[messageIndex - 1].author %>
+    </span>
+    <span class="messageContent"> <%= message[messageIndex - 1].date %> </span>
   </div>
 </header>
