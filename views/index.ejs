@@ -12,9 +12,11 @@
     <div class="allMessagesContainer">
       <% for (let i = 0; i < message.length; i++) { %>
       <div class="messageContainer">
-        <span class="messageContent messageText"> <%= message[i].text %> </span>
-        <span class="messageContent"> <%= message[i].user %> </span>
-        <span class="messageContent"> <%= message[i].added %> </span>
+        <span class="messageContent messageText">
+          <%= message[i].message %>
+        </span>
+        <span class="messageContent"> <%= message[i].author %> </span>
+        <span class="messageContent"> <%= message[i].date %> </span>
         <a href="/message/<%= message[i].id %>" class="openMessageLink">Open</a>
       </div>
       <% } %>
