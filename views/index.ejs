@@ -10,7 +10,7 @@
       <a href="./new" class="newMessageLink">New Message</a>
     </div>
     <div class="allMessagesContainer">
-      <% for (let i = 0; i < message.length; i++) { %>
+      <% if (message) {%> <% for (let i = 0; i < message.length; i++) { %>
       <div class="messageContainer">
         <span class="messageContent messageText">
           <%= message[i].message %>
@@ -19,7 +19,7 @@
         <span class="messageContent"> <%= message[i].date %> </span>
         <a href="/message/<%= message[i].id %>" class="openMessageLink">Open</a>
       </div>
-      <% } %>
+      <% } %> <% } %>
     </div>
   </body>
 </html>
